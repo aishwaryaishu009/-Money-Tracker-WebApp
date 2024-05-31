@@ -37,7 +37,7 @@ app.post("/add", (req,res) =>{
 
     })
 app.get("/",(req,res) =>{
-    res.set({
+    res.send({
         "Allow-access-Allow-Origin":'*'
     })
     return res.redirect('index.html')
